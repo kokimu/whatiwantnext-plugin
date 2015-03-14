@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+.time{
+	font-size:2em;
+	display:inline;
+	margin-right:30px;
+}
+
+.listGroup{
+	width:300px;
+}
+
+.listItem{
+	display:block;
+	width:100%;
+	margin-bottom:10px;
+}
+
+.warningParagraph{
+	color:#F33;
+}
+
+.weeklyCalender td{
+	padding:0;
+	margin:0;
+}
+
+.weeklyCalender th{
+	background-color:#C1DEBC;
+}
+
+.calenderText{
+	width:90px;
+	height:60px;
+}
+
+
+input[type=checkbox]:checked + .grayoutcb{
+	opacity: 1;
+}
+
+input[type=checkbox] + .grayoutcb{
+	opacity: 0.2;
+}
+
+#userComposition{
+	width: 100%;
+	height: 100px;
+	padding: 5px 5px 50px 5px;
+	text-wrap: normal;
+	margin-bottom:20px;
+}
+
+div.comments-area{
+	display:none;
+}
+
+span.edit-link{
+	display:none !important;
+}
