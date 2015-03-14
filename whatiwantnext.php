@@ -249,7 +249,7 @@ function form6_content(){
 	if(isset($_POST)){
 		$mailto = $_POST["email"];
 		$mailTitle = $_POST["mailTitle"];
-		$msg = "<h3>Your Bucket List</h3>";
+		$msg = "<h3>My Bucket List</h3>";
 		$timeFound = 0;
 		if(isset($_POST)){
 			foreach($_POST as $key => $value){
@@ -257,7 +257,7 @@ function form6_content(){
 					$msg .= "<li>" . $value . "</li>";
 				}else if(startsWith($key, "time")){
 					if($timeFound == 0){
-						$msg .= "<h3>Your Weekly Action Plan</h3>";
+						$msg .= "<h3>My Weekly Action Plan</h3>";
 						$timeFound = 1;
 					}
 					$msg .= '<p class="plan"><strong>' . substr($key, 5, 8) ." ". $value . " </strong>";
